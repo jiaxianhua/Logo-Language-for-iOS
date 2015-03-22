@@ -1,0 +1,31 @@
+RemoveTurtle "Bob
+Make "name 0
+Repeat 100 [
+	Make "name :name + 1
+	NewTurtle :name
+]
+Make "turtle 0
+Repeat 100 [
+	Make "turtle :turtle + 1
+	TalkTo :turtle
+	Pu
+	Home
+	Pd
+	Rt (Random % 360)
+]
+Repeat 70 [
+	Make "turtle 0
+	Repeat 100 [
+		Make "turtle :turtle + 1
+		TalkTo :turtle
+		Rt (Random % 20) - 10
+		Setc Random
+		Fd 3
+	]
+]
+Make "turtle 0
+Repeat 100 [
+	Make "turtle :turtle + 1
+	TalkTo :turtle
+	St
+]

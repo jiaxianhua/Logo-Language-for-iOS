@@ -1,0 +1,12 @@
+make "penSize 1
+repeat 120
+[
+	setPenSize :penSize
+#	make "penSize :penSize + 1
+	repeat 4
+	[
+		fd 90
+		lt 90
+	]
+	rt 3
+]

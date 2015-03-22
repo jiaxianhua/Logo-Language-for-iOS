@@ -1,0 +1,12 @@
+make "penSize 0
+repeat 12
+[
+	repeat 12		# try changing to 120 (will be smooth, but slow)
+	[
+		fd 30		# try changing to 3
+		lt 30		# try changing to 3
+		make "penSize :penSize + 1
+		setPenSize :penSize
+	]
+	rt 30
+]

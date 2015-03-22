@@ -1,0 +1,12 @@
+St
+Repeat 200 [
+	Pu
+	Home
+	Pd
+	Rt (Random % 360)
+	Repeat 40 [	# try 100 instead of 40
+		Rt (Random % 20) - 10
+		Setc Random
+		Fd 7	# try 3 instead of 7
+	]
+]

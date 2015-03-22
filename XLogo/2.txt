@@ -1,0 +1,11 @@
+St
+Repeat 200 [
+	Pu
+	Home
+	Pd
+	Repeat 200 [
+		Rt Random % 100
+		Setc Random
+		Fd 3
+	]
+]

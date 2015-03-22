@@ -1,0 +1,11 @@
+RemoveTurtle "Bob
+Make "name 1
+Repeat 101 [
+	NewTurtle :name
+	TalkTo :name
+	Pu
+	Rt Random
+	Fd 100
+	St
+	Make "name :name + 1
+]

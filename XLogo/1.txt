@@ -1,0 +1,33 @@
+removeturtle "Bob
+make "everyone [Bob Fred Frank Miriam Sandy Tom Tracy]
+newturtle :everyone
+
+talkto "Bob	seth 360 / 7 * 0
+talkto "Frank	seth 360 / 7 * 1
+talkto "Miriam	seth 360 / 7 * 2
+talkto "Fred	seth 360 / 7 * 3
+talkto "Sandy	seth 360 / 7 * 4
+talkto "Tom	seth 360 / 7 * 5
+talkto "Tracy	seth 360 / 7 * 6
+
+talkto :everyone
+st
+setcolor "black
+make "dir 0
+repeat 200 [
+	make "dir :dir + .07
+	rt :dir
+	fd 3
+]
+pu # a few slow animations...
+repeat 9 [ lt 10 ]
+repeat 50 [ fd 1 ] # make turtle walk :)
+repeat 9 [ rt 10 ]
+pd
+make "color 0 
+repeat 120 [
+	setcolor :color
+	make "color :color+1
+	fd 3
+	rt 3
+]

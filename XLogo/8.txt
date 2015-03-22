@@ -1,0 +1,46 @@
+#Turtle race by Lasse...
+RemoveTurtle "Bob
+Make "name 1
+Repeat 15 [
+	NewTurtle :name
+	TalkTo :name
+  st
+penup
+         home
+e
+fd 100
+         w 
+#note: repeating commands is a real bad idea. =)
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         fd :name
+         	
+   	Make "name :name + 1
+	n	
+]
+
+repeat 200 [
+make "name 1
+Repeat 15 [
+	TalkTo :name
+	Pu
+	Fd Random % 4
+	St
+	Make "name :name + 1
+]
+]
